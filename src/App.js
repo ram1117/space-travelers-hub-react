@@ -1,13 +1,16 @@
+import { Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import ProfilePage from './components/ProfilePage';
+import Navigation from './components/Navigation';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Space travelers hub</h1>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <Navigation />
+    <Routes>
+      <Route path="profile" index element={<ProfilePage />} />
+    </Routes>
+  </div>
+);
 
 export default App;
