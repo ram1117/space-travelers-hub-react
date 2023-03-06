@@ -3,7 +3,7 @@
   width: 60px;
 }
 
-.nav-item>* {
+.nav-item > * {
   text-decoration: none;
   color: black;
 }
