@@ -19,8 +19,8 @@ const rocketsSlice = createSlice({
         rocketsCard.push({
           id: rockObj.rocket_id,
           name: rockObj.rocket_name,
-          type: rockObj.type,
-          image: rockObj.img,
+          description: rockObj.description,
+          image: rockObj.flickr_images[0],
           isReserved: false,
         });
       });
