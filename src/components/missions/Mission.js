@@ -15,13 +15,16 @@ const Mission = ({
       <td>{name}</td>
       <td className="px-5">{description}</td>
       <td className="align-middle">
-        <Badge bg="secondary" className="fs-6">
-          Not a member
+        <Badge
+          bg={isReserved ? 'info' : 'secondary'}
+          className="fs-6"
+        >
+          {isReserved ? 'Active Member' : 'NOT A MEMBER'}
         </Badge>
       </td>
       <td className="align-middle">
         <Button
-          className="fs-5 mx-3"
+          className="fs-6 mx-3 text-nowrap"
           variant={isReserved ? 'outline-danger' : 'outline-secondary'}
           onClick={() => dispatch(bookMission(id))}
         >
