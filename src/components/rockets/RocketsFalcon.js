@@ -1,8 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import styles from './RocketsFalcon.modules.css';
+import styles from './RocketsFalcon.module.css';
 
-const RocketFalcon = () => (
+const RocketsFalcon = () => (
   <Card className={styles.rocketFalcon} style={{ width: '18rem' }}>
     <Card.Img variant="top" src="holder.js/100px180" />
     <Card.Body>
@@ -16,4 +16,4 @@ const RocketFalcon = () => (
   </Card>
 );
 
-export default RocketFalcon;
+export default RocketsFalcon;
