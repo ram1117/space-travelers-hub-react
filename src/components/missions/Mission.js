@@ -19,7 +19,7 @@ const Mission = ({
           bg={isReserved ? 'info' : 'secondary'}
           className="fs-6"
         >
-          {isReserved ? 'Active Member' : 'NOT A MEMBER'}
+          {isReserved ? 'Active Member' : 'Not A Member'}
         </Badge>
       </td>
       <td className="align-middle">
