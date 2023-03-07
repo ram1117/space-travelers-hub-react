@@ -1,4 +1,4 @@
-import RocketsFalcon from './RocketsPage';
+import RocketsFalcon from './RocketsFalcon';
 
 const RocketsPage = () => (
   <RocketsFalcon />
