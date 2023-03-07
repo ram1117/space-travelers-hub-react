@@ -1,7 +1,7 @@
 import { Table } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import Mission from './Mission';
-import styles from './MissionsTable.module.css';
+import styles from '../../styles/MissionsTable.module.css';
 
 const MissionsTable = () => {
   const list = useSelector((state) => state.missions.missions);
