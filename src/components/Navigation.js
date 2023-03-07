@@ -10,14 +10,15 @@ const Navigation = () => (
     <Container>
       <Navbar.Brand className="d-flex">
         <div>
-          <img className="logoImage" src={planet} alt="brand logo" />
+          <img className="logoImage me-3" src={planet} alt="brand logo" />
           Space Traveler&apos;s Hub
         </div>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-          <NavItem className="nav-item"><NavLink to="profile" className={({ isActive }) => (isActive ? 'underline' : '')}>My Profile</NavLink></NavItem>
+      <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        <Nav className="mx-5">
+          <NavItem className="nav-item m-3"><NavLink to="missions" className={({ isActive }) => (isActive ? 'underline' : '')}>Missions</NavLink></NavItem>
+          <NavItem className="nav-item m-3"><NavLink to="profile" className={({ isActive }) => (isActive ? 'underline' : '')}>My Profile</NavLink></NavItem>
         </Nav>
       </Navbar.Collapse>
     </Container>
