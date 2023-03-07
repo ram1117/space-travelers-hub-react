@@ -13,11 +13,16 @@ const Mission = ({
   return (
     <tr>
       <td>{name}</td>
-      <td>{description}</td>
-      <td><Badge bg="secondary">Not a member</Badge></td>
-      <td>
+      <td className="px-5">{description}</td>
+      <td className="align-middle">
+        <Badge bg="secondary" className="fs-6">
+          Not a member
+        </Badge>
+      </td>
+      <td className="align-middle">
         <Button
-          variant={isReserved ? 'success' : 'outline-secondary'}
+          className="fs-5 mx-3"
+          variant={isReserved ? 'outline-danger' : 'outline-secondary'}
           onClick={() => dispatch(bookMission(id))}
         >
           {isReserved ? 'Leave Mission' : 'Join Mission'}
