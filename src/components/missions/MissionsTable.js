@@ -15,7 +15,14 @@ const MissionsTable = () => {
         </tr>
       </thead>
       <tbody>
-        {list.map((obj) => <Mission key={obj.id} name={obj.name} description={obj.description} />)}
+        {list.map((obj) => (
+          <Mission
+            key={obj.id}
+            id={obj.id}
+            name={obj.name}
+            description={obj.description}
+          />
+        ))}
       </tbody>
     </Table>
   );
