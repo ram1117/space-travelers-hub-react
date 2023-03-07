@@ -11,8 +11,18 @@ const missionSlice = createSlice({
   name: 'missions',
   initialState,
   reducers: {
-    bookMission: (state,payload) => { 
-      
+    bookMission: (state, { payload }) => {
+      const newArr = state.missions.map((misObj) => {
+        if (misObj.id === payload) {
+          if (misObj.isReserved === true) {
+            return { ...misObj, isReserved: false };
+          }
+          return { ...misObj, isReserved: true };
+        }
+        return ({ ...misObj });
+      });
+      const newState = { ...state };
+      return { ...newState, missions: newArr };
     },
   },
   extraReducers(builder) {

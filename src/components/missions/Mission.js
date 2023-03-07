@@ -3,7 +3,12 @@ import { useDispatch } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import { bookMission } from '../../redux/missions/missionSlice';
 
-const Mission = ({ id, name, description }) => {
+const Mission = ({
+  id,
+  name,
+  description,
+  isReserved,
+}) => {
   const dispatch = useDispatch();
   return (
     <tr>
@@ -12,21 +17,27 @@ const Mission = ({ id, name, description }) => {
       <td><Badge bg="secondary">Not a member</Badge></td>
       <td>
         <Button
-          variant="outline-secondary"
+          variant={isReserved ? 'success' : 'outline-secondary'}
           onClick={() => dispatch(bookMission(id))}
         >
-          Join Mission
+          {isReserved ? 'Leave Mission' : 'Join Mission'}
         </Button>
       </td>
     </tr>
   );
 };
 
-Mission.defaultProps = { id: '', name: '', description: '' };
+Mission.defaultProps = {
+  id: '',
+  name: '',
+  description: '',
+  isReserved: false,
+};
 Mission.propTypes = {
   id: PropTypes.string,
   name: PropTypes.string,
   description: PropTypes.string,
+  isReserved: PropTypes.bool,
 };
 
 export default Mission;

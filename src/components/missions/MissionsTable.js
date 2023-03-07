@@ -21,6 +21,7 @@ const MissionsTable = () => {
             id={obj.id}
             name={obj.name}
             description={obj.description}
+            isReserved={obj.isReserved}
           />
         ))}
       </tbody>
