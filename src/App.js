@@ -5,17 +5,22 @@ import ProfilePage from './components/ProfilePage';
 import Navigation from './components/Navigation';
 import MissionsPage from './components/missions/MissionsPage';
 import RocketsPage from './components/rockets/RocketsPage';
+import store from './redux/store';
+import { fetchRockets } from './redux/rockets/rocketsSlice';
 
-const App = () => (
-  <div className="App">
-    <Navigation />
-    <Routes>
-      <Route index element={<Navigate to="profile" replace />} />
-      <Route path="profile" element={<ProfilePage />} />
-      <Route path="rockets" element={<RocketsPage />} />
-      <Route path="missions" element={<MissionsPage />} />
-    </Routes>
-  </div>
-);
+const App = () => {
+  store.dispatch(fetchRockets());
+  return (
+    <div className="App">
+      <Navigation />
+      <Routes>
+        <Route index element={<Navigate to="rockets" replace />} />
+        <Route path="profile" element={<ProfilePage />} />
+        <Route path="rockets" element={<RocketsPage />} />
+        <Route path="missions" element={<MissionsPage />} />
+      </Routes>
+    </div>
+  );
+};
 
 export default App;
