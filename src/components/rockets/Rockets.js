@@ -1,4 +1,4 @@
-import { Button, Card } from 'react-bootstrap';
+import { Badge, Button, Card } from 'react-bootstrap';
 import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
 import styles from './RocketsFalcon.module.css';
@@ -9,13 +9,14 @@ const Rockets = ({
 }) => {
   const dispatch = useDispatch();
   return (
-    <Card className={styles.rocketFalcon} style={{ width: '18rem' }}>
-      <Card.Img variant="left" src={image} />
-      <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Text>{description}</Card.Text>
+    <Card className="d-flex flex-row m-5">
+      <Card.Img className={styles.rocketImage} variant="top" src={image} />
+      <Card.Body className="d-flex flex-column">
+        <h4 className="card-title text-start p-1 ">{name}</h4>
+        {isReserved && <Badge className="align-self-start" bg="info">Reserved</Badge>}
+        <Card.Text className=" text-start p-1 ">{description}</Card.Text>
         <Button
-          className="button"
+          className="align-self-start"
           variant={isReserved ? 'outline-secondary' : 'primary'}
           onClick={() => dispatch(bookRockets(id))}
         >
