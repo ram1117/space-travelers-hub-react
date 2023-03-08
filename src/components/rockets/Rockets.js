@@ -12,7 +12,7 @@ const Rockets = ({
     <Card className="d-flex flex-row m-5">
       <Card.Img className={styles.rocketImage} variant="top" src={image} />
       <Card.Body className="d-flex flex-column">
-        <h4 className=" card-title text-start p-1 ">{name}</h4>
+        <h4 className="card-title text-start p-1 ">{name}</h4>
         {isReserved && <Badge className="align-self-start" bg="info">Reserved</Badge>}
         <Card.Text className=" text-start p-1 ">{description}</Card.Text>
         <Button
