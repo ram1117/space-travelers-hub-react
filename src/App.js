@@ -4,7 +4,7 @@ import './App.css';
 import ProfilePage from './components/ProfilePage';
 import Navigation from './components/Navigation';
 import MissionsPage from './components/missions/MissionsPage';
-import RocketsPage from './components/rockets/RocketsPage';
+import RocketsFalcon from './components/rockets/RocketsFalcon';
 import store from './redux/store';
 import { fetchRockets } from './redux/rockets/rocketsSlice';
 
@@ -16,7 +16,7 @@ const App = () => {
       <Routes>
         <Route index element={<Navigate to="rockets" replace />} />
         <Route path="profile" element={<ProfilePage />} />
-        <Route path="rockets" element={<RocketsPage />} />
+        <Route path="rockets" element={<RocketsFalcon />} />
         <Route path="missions" element={<MissionsPage />} />
       </Routes>
     </div>

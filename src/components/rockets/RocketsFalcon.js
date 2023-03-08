@@ -8,9 +8,11 @@ const RocketsFalcon = () => {
       {rocket.map((obj) => (
         <Rockets
           key={obj.id}
+          id={obj.id}
           name={obj.name}
           description={obj.description}
           image={obj.image}
+          isReserved={obj.isReserved}
         />
       ))}
     </div>
