@@ -1,4 +1,4 @@
-import { Badge, Button, Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
 import styles from './RocketsFalcon.module.css';
@@ -13,7 +13,6 @@ const Rockets = ({
       <Card.Img variant="left" src={image} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
-        {isReserved && <Badge bg="info">Reserved</Badge>}
         <Card.Text>{description}</Card.Text>
         <Button
           className="button"
