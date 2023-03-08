@@ -14,7 +14,7 @@ describe('testing snapshots of Mission components', () => {
     const missionTable = renderer.create(
       <Provider store={store}>
         <MissionsTable />
-      </Provider>
+      </Provider>,
     ).toJSON();
     expect(missionTable).toMatchSnapshot();
   });
@@ -22,7 +22,7 @@ describe('testing snapshots of Mission components', () => {
     const missionPage = renderer.create(
       <Provider store={store}>
         <MissionsPage />
-      </Provider>
+      </Provider>,
     ).toJSON();
     expect(missionPage).toMatchSnapshot();
   });
