@@ -49,6 +49,9 @@ exports[`testing snapshots of Mission components testing MissionsPage component 
           <th>
             Status
           </th>
+          <th>
+             
+          </th>
         </tr>
       </thead>
       <tbody />
@@ -75,6 +78,9 @@ exports[`testing snapshots of Mission components testing MissionsTable component
           </th>
           <th>
             Status
+          </th>
+          <th>
+             
           </th>
         </tr>
       </thead>

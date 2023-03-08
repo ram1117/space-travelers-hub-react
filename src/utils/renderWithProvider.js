@@ -2,13 +2,19 @@ import React from "react";
 import { render } from "@testing-library/react";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
-import missionSlice from "../../redux/missions/missionSlice";
+import missionSliceReducer from "../redux/missions/missionSlice";
 
 const renderWithProvider = (ui,
   {
-    preloadedState = {},
+    preloadedState = {missions:[{
+      id:'testmission1',
+      name:'test1',
+      descriptions:'test mission',
+      isReserved:false,
+      wiki:'',
+    }]},
     store = configureStore({
-      reducer: { listReducers: missionSlice },
+      reducer: { missions: missionSliceReducer },
       preloadedState,
     }),
     ...renderOptions
