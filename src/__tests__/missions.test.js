@@ -12,14 +12,18 @@ describe('testing snapshots of Mission components', () => {
   });
   it('testing MissionsTable component', () => {
     const missionTable = renderer.create(
-      <Provider store={store}><MissionsTable />
-      </Provider>).toJSON();
+      <Provider store={store}>
+        <MissionsTable />
+      </Provider>
+    ).toJSON();
     expect(missionTable).toMatchSnapshot();
   });
   it('testing MissionsPage component', () => {
     const missionPage = renderer.create(
-      <Provider store={store}><MissionsPage />
-      </Provider>).toJSON();
+      <Provider store={store}>
+        <MissionsPage />
+      </Provider>
+    ).toJSON();
     expect(missionPage).toMatchSnapshot();
   });
 });
