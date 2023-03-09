@@ -62,7 +62,7 @@ The project is developed using React and Redux toolkit. Data is obtained from Sp
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- See it live by clicking [Live Demo Link](https://space-travelers-hub-y3bj.onrender.com/rockets)
+- See it live by clicking [Live Demo Link](https://space-travelers-hub-y3bj.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
