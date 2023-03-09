@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Profile Page components testing ProfileMissions component 1`] = `
+<div
+  className="vstack"
+>
+  <h3
+    className="text-muted"
+  >
+    Please join some missions in the Missions Page...
+  </h3>
+</div>
+`;
+
+exports[`testing Profile Page components testing ProfileMissions component 2`] = `
+<div
+  className="border py-3"
+>
+  <h3
+    className="my-2 fs-3"
+  />
+  <div
+    className="d-flex justify-content-center"
+  >
+    <button
+      className="mx-1 btn btn-outline-success"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Leave Mission
+    </button>
+    <a
+      className="mx-1 btn btn-outline-primary"
+      disabled={false}
+      href=""
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex={0}
+      target="_blank"
+    >
+      Mission Data
+    </a>
+  </div>
+</div>
+`;
+
+exports[`testing Profile Page components testing ProfilePage component 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="my-5 col-md-6"
+    >
+      <div
+        className="vstack"
+      >
+        <h3
+          className="text-muted"
+        >
+          Please join some missions in the Missions Page...
+        </h3>
+      </div>
+    </div>
+    <div
+      className="my-5 col-md-6"
+    >
+      <div
+        className="vstack"
+      >
+        <h3
+          className="text-muted"
+        >
+          Please reserve Rocket that you want to travel with...
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`testing Profile Page components testing ProfileRocket component 1`] = `
+<div
+  className="border py-3"
+>
+  <h3
+    className="my-2 fs-3"
+  />
+  <div
+    className="d-flex justify-content-center"
+  >
+    <button
+      className="mx-1 btn btn-outline-success"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Cancel Reservation
+    </button>
+  </div>
+</div>
+`;
+
+exports[`testing Profile Page components testing ProfileRockets component 1`] = `
+<div
+  className="vstack"
+>
+  <h3
+    className="text-muted"
+  >
+    Please reserve Rocket that you want to travel with...
+  </h3>
+</div>
+`;

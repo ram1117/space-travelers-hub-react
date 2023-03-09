@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing snapshots of Rocket components testing Rocket component 1`] = `
+<div
+  className="d-flex flex-row m-5 card"
+>
+  <img
+    className="card-img-top rocketImage"
+    src=""
+  />
+  <div
+    className="d-flex flex-column card-body"
+  >
+    <h4
+      className="card-title text-start p-1 "
+    />
+    <p
+      className=" text-start p-1  card-text"
+    />
+    <button
+      className="align-self-start btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Reserve rocket
+    </button>
+  </div>
+</div>
+`;
+
+exports[`testing snapshots of Rocket components testing Rockets Falcon component 1`] = `<div />`;

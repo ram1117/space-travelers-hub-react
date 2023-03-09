@@ -1,0 +1,10 @@
+.rocketList {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.rocketImage {
+  width: 19rem;
+  height: 19rem;
+  object-fit: cover;
+}
