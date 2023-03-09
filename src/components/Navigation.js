@@ -17,7 +17,7 @@ const Navigation = () => (
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className="mx-5">
-          <NavItem className="nav-item m-3 px-4"><NavLink to="rockets" className={({ isActive }) => (isActive ? 'underline' : '')}>Rockets</NavLink></NavItem>
+          <NavItem className="nav-item m-3 px-4"><NavLink to="/" className={({ isActive }) => (isActive ? 'underline' : '')}>Rockets</NavLink></NavItem>
           <NavItem className="nav-item m-3 px-4"><NavLink to="missions" className={({ isActive }) => (isActive ? 'underline' : '')}>Missions</NavLink></NavItem>
           <NavItem className="nav-item m-3 px-4"><NavLink to="profile" className={({ isActive }) => (isActive ? 'underline' : '')}>My Profile</NavLink></NavItem>
         </Nav>
