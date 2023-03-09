@@ -14,9 +14,9 @@ const App = () => {
     <div className="App">
       <Navigation />
       <Routes>
-        <Route index element={<Navigate to="rockets" replace />} />
+        <Route index element={<RocketsFalcon />} />
         <Route path="profile" element={<ProfilePage />} />
-        <Route path="rockets" element={<RocketsFalcon />} />
+        {/* <Route path="rockets" element={<RocketsFalcon />} /> */}
         <Route path="missions" element={<MissionsPage />} />
       </Routes>
     </div>
