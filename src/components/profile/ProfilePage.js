@@ -4,7 +4,7 @@ import ProfileMissions from './ProfileMissions';
 const ProfilePage = () => (
   <Container>
     <Row>
-      <Col sm={6} className="my-5"><ProfileMissions sm={6} /></Col>
+      <Col md={6} className="my-5"><ProfileMissions /></Col>
     </Row>
   </Container>
 );

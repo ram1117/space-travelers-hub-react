@@ -14,9 +14,9 @@ const ProfileMission = ({
   const dispatch = useDispatch();
   return (
     <div className="border py-3">
-      <h3 className="my-5 fs-3">
+      <h3 className="my-2 fs-3">
         {name}
-        {isReserved && <Badge className="ms-2 fs-6" bg="success">Joined</Badge>}
+        {isReserved && <Badge className="ms-4 fs-6" bg="success">Joined</Badge>}
       </h3>
       <div className="d-flex justify-content-center">
         <Button
