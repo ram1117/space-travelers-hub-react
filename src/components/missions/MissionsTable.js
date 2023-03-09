@@ -1,24 +1,23 @@
 import { Table } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import Mission from './Mission';
-import styles from './MissionsTable.module.css';
 
 const MissionsTable = () => {
   const list = useSelector((state) => state.missions.missions);
   return (
-    <div>
+    <div className="m-5">
       <Table
         striped
         bordered
         hover
         responsive="sm"
-        className={styles.missionTable}
       >
         <thead>
           <tr>
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>
+            <th> </th>
           </tr>
         </thead>
         <tbody>

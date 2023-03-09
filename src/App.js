@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import ProfilePage from './components/ProfilePage';
+import ProfilePage from './components/profile/ProfilePage';
 import Navigation from './components/Navigation';
 import MissionsPage from './components/missions/MissionsPage';
 import RocketsFalcon from './components/rockets/RocketsFalcon';
