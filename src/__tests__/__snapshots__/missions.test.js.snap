@@ -31,12 +31,14 @@ exports[`testing snapshots of Mission components testing Mission component 1`] =
 `;
 
 exports[`testing snapshots of Mission components testing MissionsPage component 1`] = `
-<div>
+<div
+  className="m-5"
+>
   <div
     className="table-responsive-sm"
   >
     <table
-      className="missionTable table table-striped table-bordered table-hover"
+      className="table table-striped table-bordered table-hover"
     >
       <thead>
         <tr>
@@ -61,12 +63,14 @@ exports[`testing snapshots of Mission components testing MissionsPage component 
 `;
 
 exports[`testing snapshots of Mission components testing MissionsTable component 1`] = `
-<div>
+<div
+  className="m-5"
+>
   <div
     className="table-responsive-sm"
   >
     <table
-      className="missionTable table table-striped table-bordered table-hover"
+      className="table table-striped table-bordered table-hover"
     >
       <thead>
         <tr>

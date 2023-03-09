@@ -62,7 +62,7 @@ The project is developed using React and Redux toolkit. Data is obtained from Sp
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-To be updated...
+- See it live by clicking [Live Demo Link](https://space-travelers-hub-y3bj.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,7 +151,7 @@ The above command creates build files that can be deployed using Github pages or
 
 - GitHub: [@MarkoKermi](https://github.com/MarkoKermi)
 - Twitter: [@MarkoKerm](https://twitter.com/MarkoKerm)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [Marko Kermichiev](https://www.linkedin.com/in/marko-kermichiev-78b1bb110/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
