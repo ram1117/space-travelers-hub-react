@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import ProfilePage from './components/profile/ProfilePage';
@@ -16,7 +16,6 @@ const App = () => {
       <Routes>
         <Route index element={<RocketsFalcon />} />
         <Route path="profile" element={<ProfilePage />} />
-        {/* <Route path="rockets" element={<RocketsFalcon />} /> */}
         <Route path="missions" element={<MissionsPage />} />
       </Routes>
     </div>
