@@ -12,7 +12,7 @@ const MissionsPage = () => {
     }
   }, [status, dispatch]);
   return (
-    <MissionsTable />
+      <MissionsTable />
   );
 };
 
